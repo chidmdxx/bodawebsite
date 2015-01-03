@@ -259,6 +259,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Boda\Padrinos.cshtml" />
     <Content Include="Views\Boda\_Persona.cshtml" />
+    <Content Include="Views\Boda\Damas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

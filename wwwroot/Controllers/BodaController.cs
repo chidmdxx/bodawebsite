@@ -33,5 +33,29 @@ namespace wwwroot.Controllers
             }
             return View(persona);
         }
+
+        public ActionResult Damas(string id)
+        {
+            PersonaModel persona = new PersonaModel();
+            id = id ?? string.Empty;
+            switch (id.ToLowerInvariant().Trim())
+            {
+                case "anilu": persona = DamasData.Anilu;
+                    break;
+                case "annie": persona = DamasData.Annie;
+                    break;
+                case "dyanne": persona = DamasData.Dyanne;
+                    break;
+                case "gra": persona = DamasData.Gra;
+                    break;
+                case "karlita": persona = DamasData.Karlita;
+                    break;
+                case "melisa": persona = DamasData.Melisa;
+                    break;
+                case "zita": persona = DamasData.Zita;
+                    break;
+            }
+            return View(persona);
+        }
     }
 }
