@@ -1,0 +1,24 @@
+﻿@model wwwroot.Models.PersonaModel
+@{
+    ViewBag.Mensaje = Model.MensajePersonal;
+    Layout = "~/Views/Boda/_Persona.cshtml";
+    ViewBag.Lego = Model.PathAFotos + "lego.jpg";
+    ViewBag.Nombre = Model.Nombre;
+    ViewBag.Color = Model.Color;
+    ViewBag.Foto = Model.PathAFotos + "foto.jpg";
+}
+
+<p>Como sabes me voy a casar, pero no voy a estar en Puebla/México en un rato, y para mi boda con Majo estamos
+    pensando en tener 7 padrinos y 7 madrinas que van a usar los 7 colores del arco iris (si lo se cursi)
+    el color esta decidido por ti y es el color del fondo y de la parte de arriba del siguiente lego (el cual es
+    totalmente real y lo llevare a México por ahí de Mayo</p>
+<p>El color en hexadecimal es @Model.Color, no tengo una mejor manera de pasarlo en el internet</p>
+<b>Cosas que vas a necesitar</b>
+<ul>    
+    <li>1. Corbata</li>
+    <li>2. Fajilla</li>
+    <li>3. Pañuelo</li>
+    <li>4. Traje negro</li>
+    <li>5. Chance Converse del color (se pueden pedir en línea) para la fiesta</li>
+    <li>5. Chance algo más elegante que un traje negro</li>
+</ul>

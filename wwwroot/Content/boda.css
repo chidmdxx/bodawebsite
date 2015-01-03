@@ -1,0 +1,16 @@
+﻿body {
+}
+
+div.main {
+    background-color:lightslategray;
+    z-index: 5;
+    width: 90%;
+    position:absolute;
+    left:50%;
+    margin-left:-5%;
+    font-family:'Segoe UI';
+}
+
+img.lego {
+    box-shadow: 10px 10px 5px #888888;
+}
