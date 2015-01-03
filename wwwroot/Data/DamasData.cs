@@ -6,48 +6,55 @@ using wwwroot.Models;
 
 namespace wwwroot.Data
 {
-    public static class MadrinasData
+    public static class DamasData
     {
         public static PersonaModel Anilu = new PersonaModel
         {
             Nombre = "Anilu",
-            Color = ColoresData.Rojo
+            Color = ColoresHexData.Rojo,
+            ColorPantone = ColoresPantoneData.Rojo
         };
 
         public static PersonaModel Gra = new PersonaModel
         {
             Nombre = "Gra",
-            Color = ColoresData.Naranja
+            Color = ColoresHexData.Naranja,
+            ColorPantone = ColoresPantoneData.Naranja
         };
 
         public static PersonaModel Karlita = new PersonaModel
         {
             Nombre = "Karlita",
-            Color = ColoresData.Amarillo
+            Color = ColoresHexData.Amarillo,
+            ColorPantone = ColoresPantoneData.Amarillo
         };
 
         public static PersonaModel Melisa = new PersonaModel
         {
             Nombre = "Melisa",
-            Color = ColoresData.Verde
+            Color = ColoresHexData.Verde,
+            ColorPantone = ColoresPantoneData.Verde
         };
 
         public static PersonaModel Dyanne = new PersonaModel
         {
             Nombre = "Dyanne",
-            Color = ColoresData.AzulClaro
+            Color = ColoresHexData.AzulClaro,
+            ColorPantone = ColoresPantoneData.AzulClaro
         };
 
         public static PersonaModel Annie = new PersonaModel
         {
             Nombre = "Annie",
-            Color = ColoresData.AzulFuerte
+            Color = ColoresHexData.AzulFuerte,
+            ColorPantone = ColoresPantoneData.AzulFuerte
         };
 
         public static PersonaModel Zita = new PersonaModel
         {
             Nombre = "Zita",
-            Color = ColoresData.Morado
+            Color = ColoresHexData.Morado,
+            ColorPantone = ColoresPantoneData.Morado
         };
     }
 }

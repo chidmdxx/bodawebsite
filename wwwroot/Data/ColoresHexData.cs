@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace wwwroot.Data
+﻿namespace wwwroot.Data
 {
-    public static class ColoresData
+    public static class ColoresHexData
     {
         public static string Rojo = "#ff0000";
         public static string Naranja = "#ff7f00";

@@ -11,43 +11,50 @@ namespace wwwroot.Data
         public static PersonaModel Mike = new PersonaModel
         {
             Nombre = "Mike",
-            Color = ColoresData.Rojo
+            Color = ColoresHexData.Rojo,
+            ColorPantone = ColoresPantoneData.Rojo
         };
 
         public static PersonaModel Tyto = new PersonaModel
         {
             Nombre = "Tyto",
-            Color = ColoresData.Naranja
+            Color = ColoresHexData.Naranja,
+            ColorPantone = ColoresPantoneData.Naranja
         };
 
         public static PersonaModel Moi = new PersonaModel
         {
             Nombre = "Moi",
-            Color = ColoresData.Amarillo
+            Color = ColoresHexData.Amarillo,
+            ColorPantone = ColoresPantoneData.Amarillo
         };
 
         public static PersonaModel Vaj = new PersonaModel
         {
             Nombre = "Vaj",
-            Color = ColoresData.Verde
+            Color = ColoresHexData.Verde,
+            ColorPantone = ColoresPantoneData.Verde
         };
 
         public static PersonaModel Franco = new PersonaModel
         {
             Nombre = "Franco",
-            Color = ColoresData.AzulClaro
+            Color = ColoresHexData.AzulClaro,
+            ColorPantone = ColoresPantoneData.AzulClaro
         };
 
         public static PersonaModel Ruheri = new PersonaModel
         {
             Nombre = "Ruheri",
-            Color = ColoresData.AzulFuerte
+            Color = ColoresHexData.AzulFuerte,
+            ColorPantone = ColoresPantoneData.AzulFuerte
         };
 
         public static PersonaModel Edwin = new PersonaModel
         {
             Nombre = "Edwin",
-            Color = ColoresData.Morado
+            Color = ColoresHexData.Morado,
+            ColorPantone = ColoresPantoneData.Morado
         };
     }
 }

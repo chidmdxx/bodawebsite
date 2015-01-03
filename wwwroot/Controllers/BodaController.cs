@@ -13,6 +13,7 @@ namespace wwwroot.Controllers
         public ActionResult Padrinos(string id)
         {
             PersonaModel persona = new PersonaModel();
+            id = id ?? string.Empty;
             switch (id.ToLowerInvariant())
             {
                 case "mike": persona = PadrinosData.Mike;
