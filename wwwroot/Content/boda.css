@@ -3,10 +3,10 @@
 
 div.main {
     background-color:lightslategray;
-    z-index: 5;
     width: 90%;
-    position:absolute;
-    left:50%;
+    height:100%;
+    position: relative;
+    left:10%;
     margin-left:-5%;
     font-family:'Segoe UI';
 }

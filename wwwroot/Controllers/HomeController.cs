@@ -13,16 +13,14 @@ namespace wwwroot.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Fotos()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Informacion()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Aqui aparecerá la información sobre el lugar de la boda.";
 
             return View();
         }
