@@ -3,7 +3,18 @@
 }
 
 <div>
-    <div class="main">
+    <div class="personamain">
         @RenderBody()
+        <p>
+            El color que te toca en hexadecimal es <font color="@ViewBag.Color">@Model.Color</font>
+            y en version pantone es <font color="@ViewBag.Color">@ViewBag.ColorPantone</font>
+        </p>
+        <div class="colorsample" style="background-color:@ViewBag.Color;">
+            <a href="@string.Format("http://www.color-hex.com/color/{0}", @ViewBag.Color.Replace("#", ""))">Color</a>
+        </div>
+        <br />
+        <p>
+            Cualquier cosa contactanos :D
+        </p>
     </div>
 </div>

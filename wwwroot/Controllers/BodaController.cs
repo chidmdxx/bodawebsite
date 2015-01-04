@@ -30,6 +30,7 @@ namespace wwwroot.Controllers
                     break;
                 case "edwin": persona = PadrinosData.Edwin;
                     break;
+                default: return new HttpNotFoundResult("Hey no eres padrino, o no escribiste bien tu nombre");
             }
             return View(persona);
         }
@@ -54,6 +55,7 @@ namespace wwwroot.Controllers
                     break;
                 case "zita": persona = DamasData.Zita;
                     break;
+                default: return new HttpNotFoundResult("Esa dama no existe :p");
             }
             return View(persona);
         }

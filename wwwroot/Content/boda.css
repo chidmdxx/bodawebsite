@@ -1,16 +1,47 @@
 ﻿body {
 }
 
-div.main {
-    background-color:lightslategray;
+.personamain {
+    background-color: #eeeeee;
+    line-height: 1.2;
     width: 90%;
-    height:100%;
+    height: 100%;
     position: relative;
-    left:10%;
-    margin-left:-5%;
-    font-family:'Segoe UI';
+    left: 10%;
+    margin-left: -5%;
+    font-family: 'Segoe UI';
+    font-size: 15px;
 }
 
-img.lego {
+.lego {
     box-shadow: 10px 10px 5px #888888;
+}
+
+div.colorsample {
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
+    margin-bottom: 13px;
+    height: 80px;
+    padding: 0;
+    position: relative;
+    font-family: Inconsolata,sans-serif;
+    text-align: center;
+    line-height: 18px;
+    background: grey;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: white;
+    vertical-align: central;
+    display: table;
+}
+
+.colorsample a {
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+    font-size: 22px;
 }
