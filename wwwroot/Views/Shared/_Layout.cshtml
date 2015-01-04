@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var bodyContainerClase = "container body-content";
+    if(Html.ViewContext.HttpContext.Request.Url.LocalPath.ToLower().Contains("padrinos") ||
+        Html.ViewContext.HttpContext.Request.Url.LocalPath.ToLower().Contains("damas"))
+    {
+        bodyContainerClase = "nopad";
+    }
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -28,14 +37,12 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="@bodyContainerClase">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>Recuerda que la boda será en Noviembre 2015</p>
-        </footer>
     </div>
-
+    <footer>
+        <p>Recuerda que la boda será en Noviembre 2015</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
