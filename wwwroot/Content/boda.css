@@ -25,6 +25,14 @@
     margin-bottom: 15px;
 }
 
+.personafoto {
+    box-shadow: 5px 5px 5px #888888;
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+}
+
+
 div.colorsample {
     float: left;
     width: 70%;

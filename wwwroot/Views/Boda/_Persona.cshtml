@@ -1,10 +1,8 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var color = System.Drawing.ColorTranslator.FromHtml(ViewBag.Color);
-    var rgba = string.Format("rgba( {0}, {1}, {2}, 0.6);", color.R, color.G, color.B);
 }
 
-<div class="personacontainer" style="background-color:@rgba;">
+<div class="personacontainer" style="background-color:@ViewBag.Color;">
     <div class="personamain">
         @RenderBody()
         <p>

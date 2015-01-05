@@ -3,6 +3,8 @@
     ViewBag.Mensaje = Model.MensajePersonal;
     Layout = "~/Views/Boda/_Persona.cshtml";
     ViewBag.Lego = Model.PathAFotos + "lego.jpg";
+    ViewBag.FotoUno = Model.PathAFotos + "1.jpg";
+    ViewBag.FotoDos = Model.PathAFotos + "2.jpg";
     ViewBag.Nombre = Model.Nombre;
     ViewBag.Color = Model.Color;
     ViewBag.ColorPantone = Model.ColorPantone;
@@ -15,6 +17,8 @@
     ¡Hola @Model.Nombre! A Chid y a mi nos da mucho gusto contar contigo para este día tan especial para nosotros ¡Muchas Gracias por toda tu ayuda y participación! :)
     El tema principal de la boda son los 7 colores del arcoiris, cada dama tiene asignado un color, el que te toca es el color de la playera de tu lego-dama.
     <br />
+    @Model.MensajePersonal
+    <br />
     Cosas en las que me puedes ayudar:
     <br />
     1. Preparar la despedida de soltera n.n se que algunas de ustedes no se conocen entre si, pero creanme que son
@@ -22,11 +26,16 @@
     cada quien poniendo un poco de su personalidad y de ese brillo que las hace unicas. Debido a que voy a estar
     viajando entre Mexico y Seattle, a mi me funcionaria más que fuera entre fecha por decidir.
     <br />
+<p><img class="personafoto" src="@Url.Content(ViewBag.FotoUno)" /></p>
     2. Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
     antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
     de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
     ayudarían mucho n.n
-
+<br />
+@if (@Model.NumeroDeFotos > 1)
+{
+    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoDos)" /></p>
+}
     ¡Por ahora eso es todo! Gracias por toda tu ayuda y estamos en contacto para ver los detalles de tu checklist n.n ¡Besos!
 </p>
 <br />

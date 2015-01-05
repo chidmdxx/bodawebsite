@@ -3,6 +3,8 @@
     ViewBag.Mensaje = Model.MensajePersonal;
     Layout = "~/Views/Boda/_Persona.cshtml";
     ViewBag.Lego = Model.PathAFotos + "lego.jpg";
+    ViewBag.FotoUno = Model.PathAFotos + "1.jpg";
+    ViewBag.FotoDos = Model.PathAFotos + "2.jpg";
     ViewBag.Nombre = Model.Nombre;
     ViewBag.Color = Model.Color;
     ViewBag.ColorPantone = Model.ColorPantone;
@@ -10,12 +12,19 @@
 }
 
 <img class="lego" src="@Url.Content(ViewBag.Lego)" />
-
-<p>Como sabes me voy a casar, pero no voy a estar en Puebla/México en un rato, y para mi boda con Majo estamos
+<p>@Model.MensajePersonal</p>
+@if (@Model.NumeroDeFotos > 0)
+{
+    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoUno)" /></p>
+}
+<p>Como sabes me voy a casar, pero no voy a estar en Puebla/México en un rato, y para la boda con Majo estamos
     pensando en tener 7 padrinos y 7 madrinas que van a usar los 7 colores del arco iris (si lo se cursi)
-    el color esta decidido por ti y es el color del fondo y de la parte de arriba del siguiente lego (el cual es
-    totalmente real y lo llevare a México por ahí de Mayo</p>
-
+    el color esta decidido por ti y es el color del fondo y de la parte de arriba del lego que eseta en la foto
+    de arriba (el cual es totalmente real) lo llevare a México por ahí de Mayo</p>
+@if (@Model.NumeroDeFotos > 1)
+{
+    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoDos)" /></p>
+}
 <br />
 <b>Cosas que vas a necesitar</b>
 <ul>    
