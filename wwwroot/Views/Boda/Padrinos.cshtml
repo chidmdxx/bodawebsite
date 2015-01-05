@@ -1,13 +1,9 @@
 ﻿@model wwwroot.Models.PersonaModel
 @{
-    ViewBag.Mensaje = Model.MensajePersonal;
     Layout = "~/Views/Boda/_Persona.cshtml";
     ViewBag.Lego = Model.PathAFotos + "lego.jpg";
     ViewBag.FotoUno = Model.PathAFotos + "1.jpg";
     ViewBag.FotoDos = Model.PathAFotos + "2.jpg";
-    ViewBag.Nombre = Model.Nombre;
-    ViewBag.Color = Model.Color;
-    ViewBag.ColorPantone = Model.ColorPantone;
     ViewBag.Foto = Model.PathAFotos + "foto.jpg";
 }
 

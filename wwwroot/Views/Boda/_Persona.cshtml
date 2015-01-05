@@ -1,16 +1,19 @@
-﻿@{
+﻿@model wwwroot.Models.PersonaModel
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = @Model.Nombre;
 }
 
-<div class="personacontainer" style="background-color:@ViewBag.Color;">
+<div class="personacontainer" style="background-color:@Model.Color;">
     <div class="personamain">
+        <h1>@Model.Nombre</h1>
         @RenderBody()
         <p>
-            El color que te toca en hexadecimal es <font color="@ViewBag.Color">@Model.Color</font>
-            y en version pantone es <font color="@ViewBag.Color">@ViewBag.ColorPantone</font>
+            El color que te toca en hexadecimal es <font color="@Model.Color">@Model.Color</font>
+            y en version pantone es <font color="@Model.Color">@Model.ColorPantone</font>
         </p>
-        <div class="colorsample" style="background-color:@ViewBag.Color;">
-            <a href="@string.Format("http://www.color-hex.com/color/{0}", @ViewBag.Color.Replace("#", ""))">Color</a>
+        <div class="colorsample" style="background-color:@Model.Color;">
+            <a href="@string.Format("http://www.color-hex.com/color/{0}", @Model.Color.Replace("#", ""))">Color</a>
         </div>
         <br />
         <p>
