@@ -33,6 +33,10 @@
     margin-left: 35%;
 }
 
+.personatitulo {
+    text-align:center;
+    font-size:44px;
+}
 
 div.colorsample {
     float: left;
