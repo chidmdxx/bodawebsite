@@ -4,50 +4,48 @@
     ViewBag.Lego = Model.PathAFotos + "lego.jpg";
     ViewBag.FotoUno = Model.PathAFotos + "1.jpg";
     ViewBag.FotoDos = Model.PathAFotos + "2.jpg";
-    ViewBag.Foto = Model.PathAFotos + "foto.jpg";
 }
 
-<img class="lego" src="@Url.Content(ViewBag.Lego)" />
-<p>@Model.MensajePersonal</p>
-@if (@Model.NumeroDeFotos > 0)
-{
-    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoUno)" /></p>
-}
-<p>
-    Como sabes me voy a casar, pero no voy a estar en Puebla/México en un rato, y para la boda con Majo estamos
-    pensando en tener 7 padrinos y 7 madrinas que van a usar los 7 colores del arco iris (si lo sé, cursi)
-    el color esta decidido por ti y es el color del fondo y de la parte de arriba del lego que eseta en la foto
-    (el cual es totalmente real) lo llevare a México por ahí de Mayo
-</p>
-<p>
-    <b>Cosas en las que me puedes ayudar:</b>
+@section Personal{
+    <p>@Model.MensajePersonal</p>
+    <p>
+        Como sabes me voy a casar, pero no voy a estar en Puebla/México en un rato, y para la boda con Majo estamos
+        pensando en tener 7 padrinos y 7 madrinas que van a usar los 7 colores del arco iris (si lo sé, cursi)
+        el color esta decidido por ti y es el color del fondo y de la parte de arriba del lego que eseta en la foto
+        (el cual es totalmente real) lo llevare a México por ahí de Mayo
     </p>
-<p>
-    1. Preparar la despedida de soltero y esas cosas creo y así, osea algo como videojuegos y chelas o chelas y videojuegos
-        voy a hacer un grupo en fb ya que no se conocen todos al 100% y esas cosas, una fecha cercana a la boda sería cool creo, es su trabajo realmente así que sólo es recomendación.
-</p>
-@if (@Model.NumeroDeFotos > 1)
-{
-    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoDos)" /></p>
 }
-<p>
-    2. Para la recepción estamos pensando en un estilo vintage (tampoco estoy seguro de que significa pero parece viejo y cool)
+@section Peticion
+{
+    <p>
+        <b>Cosas en las que me puedes ayudar:</b>
+    </p>
+    <p>
+        1. Preparar la despedida de soltero y esas cosas creo y así, osea algo como videojuegos y chelas o chelas y videojuegos
+        voy a hacer un grupo en fb ya que no se conocen todos al 100% y esas cosas, una fecha cercana a la boda sería cool creo, es su trabajo realmente así que sólo es recomendación.
+    </p>
+    <p>
+        2. Para la recepción estamos pensando en un estilo vintage (tampoco estoy seguro de que significa pero parece viejo y cool)
         entonces estamos juntando marcos de fotos antiguos de cualquier tamaño, teteras, tazas, floreros, cámaras para decoración.
         Si tienen algo que puedan donar con un tal vez no regrese porque la gente se lo lleve de centro de mesa pero si se queda son libres de llevarselo de regreso
         estaría super cool.
-    Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
-    antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
-    de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
-    ayudarían mucho n.n
-</p>
-<p>
-    <b>Cosas que vas a necesitar</b>
-    <ul>
-        <li>Corbata</li>
-        <li>Fajilla</li>
-        <li>Pañuelo</li>
-        <li>Traje negro</li>
-        <li>Chance Converse del color (se pueden pedir en línea) para la fiesta</li>
-        <li>Chance algo más elegante que un traje negro</li>
-    </ul>
-</p>
+        Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
+        antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
+        de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
+        ayudarían mucho n.n
+    </p>
+}
+@section Necesitar
+{
+    <p>
+        <b>Cosas que vas a necesitar</b>
+        <ul>
+            <li>Corbata</li>
+            <li>Fajilla</li>
+            <li>Pañuelo</li>
+            <li>Traje negro</li>
+            <li>Chance Converse del color (se pueden pedir en línea) para la fiesta</li>
+            <li>Chance algo más elegante que un traje negro</li>
+        </ul>
+    </p>
+}

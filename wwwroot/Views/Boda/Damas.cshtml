@@ -11,46 +11,49 @@
     ViewBag.Foto = Model.PathAFotos + "foto.jpg";
 }
 
-<img class="lego" src="@Url.Content(ViewBag.Lego)" />
-
-<p>
-    ¡Hola @Model.Nombre! A Chid y a mi nos da mucho gusto contar contigo para este día tan especial para nosotros ¡Muchas Gracias por toda tu ayuda y participación! :)
-    El tema principal de la boda son los 7 colores del arcoiris, cada dama tiene asignado un color, el que te toca es el color de la playera de tu lego-dama.
-    <br />
-</p>
-<p>
-    @Model.MensajePersonal
-    <br />
-</p>
-<p>
-    <b>Cosas en las que me puedes ayudar:</b>
-</p>
-<p>
-    1. Preparar la despedida de soltera n.n se que algunas de ustedes no se conocen entre si, pero creanme que son
-    las niñas mas lindas de todo el universo y se que se van a caer muy bien y van a poder organizar algo juntas,
-    cada quien poniendo un poco de su personalidad y de ese brillo que las hace unicas. Debido a que voy a estar
-    viajando entre Mexico y Seattle, a mi me funcionaria más que fuera entre fecha por decidir.
-    <br />
-</p>
-<p><img class="personafoto" src="@Url.Content(ViewBag.FotoUno)" /></p>
-<p>
-    2. Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
-    antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
-    de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
-    ayudarían mucho n.n
-    <br />
-</p>
-@if (@Model.NumeroDeFotos > 1)
+@section Personal
 {
-    <p><img class="personafoto" src="@Url.Content(ViewBag.FotoDos)" /></p>
+    <p>
+        ¡Hola @Model.Nombre! A Chid y a mi nos da mucho gusto contar contigo para este día tan especial para nosotros ¡Muchas Gracias por toda tu ayuda y participación! :)
+        El tema principal de la boda son los 7 colores del arcoiris, cada dama tiene asignado un color, el que te toca es el color de la playera de tu lego-dama.
+        <br />
+    </p>
+    <p>
+        @Model.MensajePersonal
+        <br />
+    </p>
 }
-<p>
-    ¡Por ahora eso es todo! Gracias por toda tu ayuda y estamos en contacto para ver los detalles de tu checklist n.n ¡Besos!
-</p>
-<br />
-<b>Check list para las damas:</b>
-<ul>
-    <li>Vestido</li>
-    <li>Zapatos</li>
-    <li>Ramo</li>
-</ul>
+@section Peticion
+{
+    <p>
+        <b>Cosas en las que me puedes ayudar:</b>
+    </p>
+    <p>
+        1. Preparar la despedida de soltera n.n se que algunas de ustedes no se conocen entre si, pero creanme que son
+        las niñas mas lindas de todo el universo y se que se van a caer muy bien y van a poder organizar algo juntas,
+        cada quien poniendo un poco de su personalidad y de ese brillo que las hace unicas. Debido a que voy a estar
+        viajando entre Mexico y Seattle, a mi me funcionaria más que fuera entre fecha por decidir.
+        <br />
+    </p>
+
+    <p>
+        2. Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
+        antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
+        de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
+        ayudarían mucho n.n
+        <br />
+    </p>
+}
+@section Necesitar
+{
+    <p>
+        ¡Por ahora eso es todo! Gracias por toda tu ayuda y estamos en contacto para ver los detalles de tu checklist n.n ¡Besos!
+    </p>
+    <br />
+    <b>Check list para las damas:</b>
+    <ul>
+        <li>Vestido</li>
+        <li>Zapatos</li>
+        <li>Ramo</li>
+    </ul>
+}
