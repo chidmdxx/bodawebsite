@@ -18,9 +18,9 @@
             //xPosition - Horizontal position of the element
             //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
             //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-            $('#intro').parallax("50%", 0.1);
-            $('#second').parallax("50%", 0.1);
-            $('#third').parallax("50%", 0.3);
+            $('#intro').parallax("100%", 0.5);
+            $('#second').parallax("0%", 0.6);
+            $('#third').parallax("100%", 0.3);
 
         })
     </script>
@@ -34,25 +34,24 @@
         <li><a href="#fifth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
     </ul>
 
-    <div id="intro" style="background: url(@Url.Content(ViewBag.Lego)) no-repeat fixed; background-color: @Model.Color">
+    <div id="intro" style="background-image: url(@Url.Content(ViewBag.Lego)); background-color: @Model.Color">
         <div class="story">
-            <div class="float-left">
-                <h2>@Model.Nombre</h2>
+            <div class="float-intro">
+                <h2 class="personatitulo">@Model.Nombre</h2>
                 @RenderSection("Personal")
             </div>
         </div> <!--.story-->
     </div> <!--#intro-->
 
-    <div id="second" style="background: url(@Url.Content(ViewBag.FotoUno)) no-repeat fixed; background-color: @Model.Color">
+    <div id="second" style="background-image: url(@Url.Content(ViewBag.FotoUno));">
         <div class="story">
             <div class="float-right">
                 @RenderSection("Peticion")
             </div>
         </div> <!--.story-->
-
     </div> <!--#second-->
 
-    <div id="third" style="background: url(@Url.Content(ViewBag.FotoDos)) no-repeat fixed; background-color: @Model.Color">
+    <div id="third" style="background-image: url(@Url.Content(ViewBag.FotoDos));">
         <div class="story">
             <div class="float-left">
                 @RenderSection("Necesitar")

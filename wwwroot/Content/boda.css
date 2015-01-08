@@ -1,42 +1,8 @@
-﻿.personacontainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0;
-}
-
-.personamain {
-    background-color: #eeeeee;
-    line-height: 1.2;
-    width: 90%;
-    height: 100%;
-    position: relative;
-    left: 10%;
-    margin-left: -5%;
-    font-family: 'Segoe UI';
-    font-size: 15px;
-    padding: 10px;
-}
-
-.lego {
-    box-shadow: 5px 5px 5px #888888;
-    width: 50%;
-    margin-left: 25%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.personafoto {
-    box-shadow: 5px 5px 5px #888888;
-    width: 30%;
-    height: auto;
-    margin-left: 35%;
-}
-
-.personatitulo {
-    text-align:center;
-    font-size:44px;
+﻿.personatitulo {
+    text-align: center;
+    font-size: 44px;
     font-family: 'Pinyon Script', cursive;
+    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
 }
 
 div.colorsample {
@@ -50,6 +16,7 @@ div.colorsample {
     padding: 0;
     position: relative;
     font-family: Inconsolata,sans-serif;
+    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
     text-align: center;
     line-height: 18px;
     background: grey;
@@ -63,6 +30,7 @@ div.colorsample {
 
 .colorsample a {
     vertical-align: middle;
+    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
     display: table-cell;
     color: white;
     font-size: 22px;
@@ -83,116 +51,126 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 @charset "utf-8";
 /* CSS Document */
 
-body{
-	margin: 0;
-	min-width: 980px;
-	padding: 0;
+body {
+    margin: 0;
+    min-width: 980px;
+    padding: 0;
 }
 
-p{
-	margin: 0 0 20px 0;	
+p {
+    margin: 0 0 20px 0;
 }
 
-p, ul{
-	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size-adjust:0.488;
-	font-weight:200;
-	font-style:normal;
-}
-
-img{
-	border: 0;
-}
-
-h1, #pixels{
-	font-family:"Museo 900", Verdana, serif;
-	font-size-adjust:0.40;
-	font-weight:700;
-	font-style:normal;
-}
-
-h2{
-	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
-	font-size-adjust:0.531;
-	font-weight:500;
-	font-style:normal;
-}
-
-#header h1, #pixels{
-	color: #48941A;
-}
-
-.float-left{
-	float: left;	
-	margin: 0 0 0 20px;
-}
-
-.float-right{
-	float: right;
-	margin: 0 20px 0 0;
-}
-
-.center{
-	font-size: 2.5em;
-	padding: 80px 0 0 0;
-	text-align: center;
-}
-
-#nav{
-	list-style: none;
-	position: fixed;
-	right: 20px;
-}
-
-#nav li{
-	margin: 0 0 15px 0;	
-}
-
-#header, #intro, #second{
-	width: 100%;
-}
-
-#intro{
-    background-size:100%;
-	color: white;
-	height: 600px;
-	margin: 0 auto;
-	padding: 0;
-}
-
-#second{
-    background-size:100%;
-	color: white;
-	height: 1300px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
-}
-
-#third{
-    background-size:100%;
-	color: white;
-	height: 650px;
-	padding: 100px 0 0 0;	
-}
-
-#fifth{
-	background: #080808;
+p, ul {
+    font-family: 'Segoe UI';
+    font-size-adjust: 1;
+    font-weight: 900;
     color: white;
-	height: 400px;
-	margin: 0 auto;
-	padding: 40px 0 0 0;
+    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
 }
 
-.story{
-	margin: 0 auto;
-	min-width: 980px;
-	overflow: auto;
-	width: 980px;
+img {
+    border: 0;
 }
 
-.story .float-left, .story .float-right{
-	padding: 100px 0 0 0;
-	position: relative;
-	width: 350px;	
+h1, #pixels {
+    font-family: "Museo 900", Verdana, serif;
+    font-size-adjust: 0.40;
+    font-weight: 700;
+    font-style: normal;
 }
+
+h2 {
+    font-family: "Beau Sans Pro Book", Verdana, sans-serif;
+    font-size-adjust: 0.531;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#header h1, #pixels {
+    color: #48941A;
+}
+
+.float-intro {
+    margin: 0 0 0 20px;
+}
+
+.float-left {
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+.center {
+    font-size: 2.5em;
+    padding: 80px 0 0 0;
+    text-align: center;
+}
+
+#nav {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+}
+
+    #nav li {
+        margin: 0 0 15px 0;
+    }
+
+#header, #intro, #second {
+    width: 100%;
+}
+
+#intro {
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+#second {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: darkgrey;
+    color: white;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+#third {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    color: white;
+    height: 400px;
+    padding: 0;
+}
+
+#fifth {
+    background: #080808;
+    color: white;
+    height: 200px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+.story {
+    margin: 0 auto;
+    min-width: 980px;
+    overflow: auto;
+    width: 980px;
+}
+
+    .story .float-left, .story .float-right {
+        padding: 50px 0 0 0;
+        position: relative;
+        width: 450px;
+    }
