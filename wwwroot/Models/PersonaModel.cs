@@ -19,5 +19,27 @@ namespace wwwroot.Models
         }
         public int NumeroDeFotos { get; set; }
         public string MensajePersonal { get; set; }
+
+        public string Lego
+        {
+            get
+            {
+                return this.PathAFotos + "lego.jpg";
+            }
+        }
+        public string FotoUno
+        {
+            get
+            {
+                return this.PathAFotos + "1.jpg";
+            }
+        }
+        public string FotoDos
+        {
+            get
+            {
+                return this.PathAFotos + "2.jpg";
+            }
+        }
     }
 }

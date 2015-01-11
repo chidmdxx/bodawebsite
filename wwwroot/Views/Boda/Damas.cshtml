@@ -1,14 +1,6 @@
 ﻿@model wwwroot.Models.PersonaModel
 @{
-    ViewBag.Mensaje = Model.MensajePersonal;
     Layout = "~/Views/Boda/_Persona.cshtml";
-    ViewBag.Lego = Model.PathAFotos + "lego.jpg";
-    ViewBag.FotoUno = Model.PathAFotos + "1.jpg";
-    ViewBag.FotoDos = Model.PathAFotos + "2.jpg";
-    ViewBag.Nombre = Model.Nombre;
-    ViewBag.Color = Model.Color;
-    ViewBag.ColorPantone = Model.ColorPantone;
-    ViewBag.Foto = Model.PathAFotos + "foto.jpg";
 }
 
 @section Personal
@@ -23,26 +15,25 @@
         <br />
     </p>
 }
-@section Peticion
+@section Peticion1
 {
     <p>
-        <b>Cosas en las que me puedes ayudar:</b>
-    </p>
-    <p>
-        1. Preparar la despedida de soltera n.n se que algunas de ustedes no se conocen entre si, pero creanme que son
+        Preparar la despedida de soltera n.n se que algunas de ustedes no se conocen entre si, pero creanme que son
         las niñas mas lindas de todo el universo y se que se van a caer muy bien y van a poder organizar algo juntas,
         cada quien poniendo un poco de su personalidad y de ese brillo que las hace unicas. Debido a que voy a estar
         viajando entre Mexico y Seattle, a mi me funcionaria más que fuera entre fecha por decidir.
         <br />
     </p>
-
-    <p>
-        2. Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
-        antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
-        de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
-        ayudarían mucho n.n
-        <br />
-    </p>
+}
+@section Peticion2
+{
+<p>
+    Me gustan mucho las cosas vintage, entonces para decorar la recepción ando recolectando marcos de fotos
+    antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo
+    de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me
+    ayudarían mucho n.n
+    <br />
+</p>
 }
 @section Necesitar
 {

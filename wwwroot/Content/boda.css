@@ -3,6 +3,8 @@
     font-size: 44px;
     font-family: 'Pinyon Script', cursive;
     text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    margin: 0;
+    margin-top: 10px;
 }
 
 div.colorsample {
@@ -53,12 +55,11 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 
 body {
     margin: 0;
-    min-width: 980px;
     padding: 0;
 }
 
 p {
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 
 p, ul {
@@ -92,23 +93,37 @@ h2 {
 }
 
 .float-intro {
-    margin: 0 0 0 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .float-left {
     float: left;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 5%;
 }
 
 .float-right {
     float: right;
-    margin: 0 20px 0 0;
+    margin: 0 5% 0 0;
+}
+
+.float-center {
+    font-size: x-large;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
 }
 
 .center {
     font-size: 2.5em;
     padding: 80px 0 0 0;
     text-align: center;
+}
+
+.nostyle {
+    margin: 0;
+    padding: 0;
 }
 
 #nav {
@@ -126,51 +141,90 @@ h2 {
 }
 
 #intro {
-    background-size: contain;
-    background-repeat: no-repeat;
     color: white;
-    height: 500px;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+}
+
+.legoimage {
+    display: block;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
 }
 
 #second {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: darkgrey;
+    background-attachment: fixed;
+    background-color: #efefef;
     color: white;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
+    height: 100vh;
 }
 
 #third {
-    background-size: contain;
+    background-color: #efefef;
+    color: darkgray;
+    height: auto;
+    padding: 0;
+}
+
+    #third p {
+        color: darkgray;
+        text-shadow: none;
+    }
+
+    #third h2 {
+        color: darkgray;
+        text-shadow: none;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+#forth {
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #080808;
     color: white;
-    height: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
     padding: 0;
 }
 
 #fifth {
     background: #080808;
     color: white;
-    height: 200px;
+    height: auto;
     margin: 0 auto;
-    padding: 40px 0 0 0;
 }
+
+    #fifth p {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+    }
 
 .story {
     margin: 0 auto;
-    min-width: 980px;
     overflow: auto;
-    width: 980px;
+    width: 100%;
 }
 
     .story .float-left, .story .float-right {
-        padding: 50px 0 0 0;
+        padding: 5% 0 0 0;
         position: relative;
-        width: 450px;
+        width: 50%;
     }

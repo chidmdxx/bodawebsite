@@ -4,8 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>MJ+R</title>
-    <link href="~/Content/boda.css" rel="stylesheet" type="text/css" />
+    <title>@Model.Nombre</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bodacss")
+    <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="~/Scripts/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="~/Scripts/jquery.localscroll-1.2.7-min.js"></script>
@@ -18,9 +20,11 @@
             //xPosition - Horizontal position of the element
             //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
             //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-            $('#intro').parallax("100%", 0.5);
-            $('#second').parallax("0%", 0.6);
-            $('#third').parallax("100%", 0.3);
+            $('#intro').parallax("50%", 0.1);
+            $('#second').parallax("50%", 0.1, false);
+            $('#third').parallax("50%", 0.1);
+            $('#forth').parallax("50%", 0.1);
+            $('#fifth').parallax("50%", 0.1);
 
         })
     </script>
@@ -31,29 +35,47 @@
         <li><a href="#intro" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
         <li><a href="#second" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
         <li><a href="#third" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+        <li><a href="#forth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
         <li><a href="#fifth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
     </ul>
 
-    <div id="intro" style="background-image: url(@Url.Content(ViewBag.Lego)); background-color: @Model.Color">
+    <div id="intro" style="background-color: @Model.Color">
         <div class="story">
             <div class="float-intro">
                 <h2 class="personatitulo">@Model.Nombre</h2>
+                <div class="nostyle"><img src=@Url.Content(Model.Lego) class="legoimage" /></div>
                 @RenderSection("Personal")
             </div>
         </div> <!--.story-->
     </div> <!--#intro-->
 
-    <div id="second" style="background-image: url(@Url.Content(ViewBag.FotoUno));">
-        <div class="story">
-            <div class="float-right">
-                @RenderSection("Peticion")
-            </div>
-        </div> <!--.story-->
+    <div id="second" style="background-image: url(@Url.Content(Model.FotoUno));">
     </div> <!--#second-->
 
-    <div id="third" style="background-image: url(@Url.Content(ViewBag.FotoDos));">
+    <div id="third">
+        <div class="container">
+            <h2>Cosas con las que me puedes ayudar</h2>
+            <div class="row">
+                <div class="col-md-1" ></div>
+                <div class="col-md-5">
+                    <h2>1</h2>
+                    <p>
+                        @RenderSection("Peticion1")
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <h2>2</h2>
+                    <p>
+                        @RenderSection("Peticion2")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <!--#third-->
+
+    <div id="forth" style="background-image: url(@Url.Content(Model.FotoDos));">
         <div class="story">
-            <div class="float-left">
+            <div class="float-center">
                 @RenderSection("Necesitar")
             </div>
         </div> <!--.story-->
