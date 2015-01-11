@@ -20,6 +20,7 @@ namespace wwwroot.Controllers
                     break;
                 case "tyto": persona = PadrinosData.Tyto;
                     break;
+                case "moy":
                 case "moi": persona = PadrinosData.Moi;
                     break;
                 case "vaj": persona = PadrinosData.Vaj;
@@ -51,7 +52,8 @@ namespace wwwroot.Controllers
                     break;
                 case "karlita": persona = DamasData.Karlita;
                     break;
-                case "melisa": persona = DamasData.Melisa;
+                case "melisa":
+                case "mel": persona = DamasData.Mel;
                     break;
                 case "zita": persona = DamasData.Zita;
                     break;

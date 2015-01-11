@@ -2,7 +2,7 @@
     text-align: center;
     font-size: 44px;
     font-family: 'Pinyon Script', cursive;
-    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    text-shadow: 0 0 3px black;
     margin: 0;
     margin-top: 10px;
 }
@@ -18,7 +18,7 @@ div.colorsample {
     padding: 0;
     position: relative;
     font-family: Inconsolata,sans-serif;
-    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    text-shadow: 0 0 3px black;
     text-align: center;
     line-height: 18px;
     background: grey;
@@ -32,7 +32,7 @@ div.colorsample {
 
 .colorsample a {
     vertical-align: middle;
-    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    text-shadow: 0 0 3px black;
     display: table-cell;
     color: white;
     font-size: 22px;
@@ -67,7 +67,7 @@ p, ul {
     font-size-adjust: 1;
     font-weight: 900;
     color: white;
-    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    text-shadow: 0 0 3px black;
 }
 
 img {
@@ -113,7 +113,7 @@ h2 {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    text-shadow: 0 0px 0px #000000, 0 0 3px transparent;
+    text-shadow: 0 0 3px black;
 }
 
 .center {

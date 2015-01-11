@@ -30,9 +30,9 @@ namespace wwwroot.Data
             ColorPantone = ColoresPantoneData.Amarillo
         };
 
-        public static PersonaModel Melisa = new PersonaModel
+        public static PersonaModel Mel = new PersonaModel
         {
-            Nombre = "Melisa",
+            Nombre = "Mel",
             Color = ColoresHexData.Verde,
             NumeroDeFotos = 2,
             ColorPantone = ColoresPantoneData.Verde
@@ -49,17 +49,17 @@ namespace wwwroot.Data
         public static PersonaModel Annie = new PersonaModel
         {
             Nombre = "Annie",
-            Color = ColoresHexData.AzulFuerte,
+            Color = ColoresHexData.Morado,
             NumeroDeFotos = 2,
-            ColorPantone = ColoresPantoneData.AzulFuerte
+            ColorPantone = ColoresPantoneData.Morado
         };
 
         public static PersonaModel Zita = new PersonaModel
         {
             Nombre = "Zita",
-            Color = ColoresHexData.Morado,
+            Color = ColoresHexData.AzulFuerte,
             NumeroDeFotos = 2,
-            ColorPantone = ColoresPantoneData.Morado
+            ColorPantone = ColoresPantoneData.AzulFuerte
         };
     }
 }
