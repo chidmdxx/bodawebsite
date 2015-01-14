@@ -187,6 +187,7 @@
     <Content Include="Content\PadrinosDamas\Edwin\1.jpg" />
     <Content Include="Content\PadrinosDamas\Edwin\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Franco\1.jpg" />
+    <Content Include="Content\PadrinosDamas\Franco\2.jpg" />
     <Content Include="Content\PadrinosDamas\Franco\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Gra\1.jpg" />
     <Content Include="Content\PadrinosDamas\Gra\lego.jpg" />
@@ -208,6 +209,7 @@
     <Content Include="Content\PadrinosDamas\Tyto\2.jpg" />
     <Content Include="Content\PadrinosDamas\Tyto\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\1.jpg" />
+    <Content Include="Content\PadrinosDamas\Vaj\2.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Zita\1.jpg" />
     <Content Include="Content\PadrinosDamas\Zita\2.jpg" />
@@ -216,9 +218,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\parallax.css" />
     <Content Include="Content\Parallax\dot.png" />
-    <Content Include="Content\Parallax\fondo3.jpg" />
-    <Content Include="Content\Parallax\opcion2.jpg" />
-    <Content Include="Content\Parallax\opcion3.jpg" />
+    <Content Include="Content\SaveTheDate\1.jpg" />
+    <Content Include="Content\SaveTheDate\2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

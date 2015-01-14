@@ -31,11 +31,10 @@ namespace wwwroot
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
 
             bundles.Add(new StyleBundle("~/Content/padrinosdamascss").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
                       "~/Content/padrinosdamas.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,

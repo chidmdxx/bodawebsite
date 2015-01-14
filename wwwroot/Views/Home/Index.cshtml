@@ -1,29 +1,25 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Boda Majo y Chid";
 }
 
-<div class="jumbotron">
-    <h1>Save the date</h1>
-    <p>14 Noviembre 2015</p>
-</div>
+@section header
+{
+    @Styles.Render("~/Content/css")
+    <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav').localScroll(800);
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Info</h2>
-        <p>
-            Insertar foto + info aqui
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Info</h2>
-        <p>
-            Insertar foto + info aqui
-        </p>
-    </div>
-    <div class="col-md-4">
-        <h2>Info</h2>
-        <p>
-            Insertar foto + info aqui
-        </p>
-    </div>
-</div>
+            //.parallax(xPosition, speedFactor, outerHeight) options:
+            //xPosition - Horizontal position of the element
+            //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+            //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+            $('#intro').parallax("50%", 0.1);
+            $('#second').parallax("50%", 0.1);
+            $('#third').parallax("50%", 0.1);
+            $('#forth').parallax("50%", 0.1);
+            $('#fifth').parallax("50%", 0.1);
+
+        })
+    </script>
+}
