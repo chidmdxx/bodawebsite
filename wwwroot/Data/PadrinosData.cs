@@ -7,8 +7,8 @@ namespace wwwroot.Data
         public static PersonaModel Mike = new PersonaModel
         {
             Nombre = "Mike",
-            Color = ColoresHexData.Rojo,
-            ColorPantone = ColoresPantoneData.Rojo,
+            Color = ColoresHexData.AzulFuerte,
+            ColorPantone = ColoresPantoneData.AzulFuerte,
             NumeroDeFotos = 2,
             MensajePersonal = @"Para mi siempre has sido como un hermano y me gustaria que 
                                 fueras parte de la boda como mi best man. Se que ya te lo había pedido
@@ -60,8 +60,8 @@ namespace wwwroot.Data
         public static PersonaModel Ruheri = new PersonaModel
         {
             Nombre = "Ruheri",
-            Color = ColoresHexData.AzulFuerte,
-            ColorPantone = ColoresPantoneData.AzulFuerte,
+            Color = ColoresHexData.Rojo,
+            ColorPantone = ColoresPantoneData.Rojo,
             NumeroDeFotos = 1,
             MensajePersonal = @"Eres literalmente mi hermano y aunque tengamos nuestras diferencias, te quiero y estimo
                                 mucho, por eso quiero que estes entre los padrinos de la boda."

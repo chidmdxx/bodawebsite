@@ -1,12 +1,12 @@
-﻿@using System.Web.UI.WebControls
-@model wwwroot.Models.PersonaModel
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section header
+{
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>@Model.Nombre</title>
     @Styles.Render("~/Content/padrinosdamascss")
-    @Scripts.Render("~/bundles/parallax")
     <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -24,73 +24,68 @@
 
         })
     </script>
-</head>
+}
+<ul id="nav">
+    <li><a href="#intro" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#second" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#third" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#forth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#fifth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+</ul>
 
-<body>
-    <ul id="nav">
-        <li><a href="#intro" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-        <li><a href="#second" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-        <li><a href="#third" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-        <li><a href="#forth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-        <li><a href="#fifth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-    </ul>
+<div id="intro" style="background-color: @Model.Color">
+    <div class="story">
+        <div class="float-intro">
+            <h2 class="personatitulo">@Model.Nombre</h2>
+            <div class="nostyle"><img src=@Url.Content(Model.Lego) class="legoimage" /></div>
+            @RenderSection("Personal")
+        </div>
+    </div> <!--.story-->
+</div> <!--#intro-->
 
-    <div id="intro" style="background-color: @Model.Color">
-        <div class="story">
-            <div class="float-intro">
-                <h2 class="personatitulo">@Model.Nombre</h2>
-                <div class="nostyle"><img src=@Url.Content(Model.Lego) class="legoimage" /></div>
-                @RenderSection("Personal")
+<div id="second" style="background-image: url(@Url.Content(Model.FotoUno));">
+</div> <!--#second-->
+
+<div id="third">
+    <div class="container">
+        <h2>Cosas con las que me puedes ayudar</h2>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2>1</h2>
+                <p>
+                    @RenderSection("Peticion1")
+                </p>
             </div>
-        </div> <!--.story-->
-    </div> <!--#intro-->
-
-    <div id="second" style="background-image: url(@Url.Content(Model.FotoUno));">
-    </div> <!--#second-->
-
-    <div id="third">
-        <div class="container">
-            <h2>Cosas con las que me puedes ayudar</h2>
-            <div class="row">
-                <div class="col-md-1" ></div>
-                <div class="col-md-5">
-                    <h2>1</h2>
-                    <p>
-                        @RenderSection("Peticion1")
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <h2>2</h2>
-                    <p>
-                        @RenderSection("Peticion2")
-                    </p>
-                </div>
+            <div class="col-md-5">
+                <h2>2</h2>
+                <p>
+                    @RenderSection("Peticion2")
+                </p>
             </div>
         </div>
-    </div> <!--#third-->
+    </div>
+</div> <!--#third-->
 
-    <div id="forth" style="background-image: url(@Url.Content(Model.FotoDos));">
-        <div class="story">
-            <div class="float-center">
-                @RenderSection("Necesitar")
-            </div>
-        </div> <!--.story-->
-    </div> <!--#third-->
+<div id="forth" style="background-image: url(@Url.Content(Model.FotoDos));">
+    <div class="story">
+        <div class="float-center">
+            @RenderSection("Necesitar")
+        </div>
+    </div> <!--.story-->
+</div> <!--#third-->
 
-    <div id="fifth">
-        <div class="story">
-            <p>
-                El color que te toca en hexadecimal es <font color="@Model.Color">@Model.Color</font>
-                y en version pantone es <font color="@Model.Color">@Model.ColorPantone</font>
-            </p>
-            <div class="colorsample" style="background-color:@Model.Color;">
-                <a href="@string.Format("http://www.color-hex.com/color/{0}", @Model.Color.Replace("#", ""))">Color</a>
-            </div>
-            <br />
-            <p>
-                Cualquier cosa contactanos :D
-            </p>
-        </div> <!--.story-->
-    </div> <!--#fifth-->
-</body>
-</html>
+<div id="fifth">
+    <div class="story">
+        <p>
+            El color que te toca en hexadecimal es <font color="@Model.Color">@Model.Color</font>
+            y en version pantone es <font color="@Model.Color">@Model.ColorPantone</font>
+        </p>
+        <div class="colorsample" style="background-color:@Model.Color;">
+            <a href="@string.Format("http://www.color-hex.com/color/{0}", @Model.Color.Replace("#", ""))">Color</a>
+        </div>
+        <br />
+        <p>
+            Cualquier cosa contactanos :D
+        </p>
+    </div> <!--.story-->
