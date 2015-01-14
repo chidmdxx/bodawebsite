@@ -23,13 +23,20 @@ namespace wwwroot
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/parallax").Include(
+                      "~/Scripts/jquery-1.6.4.min.js",
+                      "~/Scripts/jquery.parallax-1.1.3.js",
+                      "~/Scripts/jquery.localscroll-1.2.7-min.js",
+                      "~/Scripts/jquery.scrollTo-1.4.2-min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/Content/bodacss").Include(
+            bundles.Add(new StyleBundle("~/Content/padrinosdamascss").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/boda.css"));
+                      "~/Content/site.css",
+                      "~/Content/padrinosdamas.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

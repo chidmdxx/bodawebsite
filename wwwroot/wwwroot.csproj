@@ -175,7 +175,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\boda.css" />
+    <Content Include="Content\padrinosdamas.css" />
     <Content Include="Content\PadrinosDamas\Anilu\2.jpg" />
     <Content Include="Content\PadrinosDamas\Anilu\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Annie\1.jpg" />
@@ -231,6 +231,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.localscroll-1.2.7-min.js" />
     <Content Include="Scripts\jquery.parallax-1.1.3.js" />
     <Content Include="Scripts\jquery.scrollTo-1.4.2-min.js" />
