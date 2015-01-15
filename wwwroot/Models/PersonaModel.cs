@@ -17,7 +17,6 @@ namespace wwwroot.Models
                 return string.Format("~/Content/PadrinosDamas/{0}/", this.Nombre);
             }
         }
-        public int NumeroDeFotos { get; set; }
         public string MensajePersonal { get; set; }
 
         public string Lego

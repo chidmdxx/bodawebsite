@@ -22,10 +22,10 @@ p {
 }
 
 p, ul {
-    font-family:  "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     font-weight: 900;
-    color: white;
-    text-shadow: 0 0 3px black;
+    color: #fafafa;
+    text-shadow: 0 0 3px #222222;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
     text-align: center;
     font-size: 60px;
     font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
     margin: 0;
     margin-top: 10px;
 }
@@ -52,23 +52,23 @@ div.colorsample {
     padding: 0;
     position: relative;
     font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
     text-align: center;
     line-height: 18px;
     background: grey;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    color: white;
+    color: #fafafa;
     vertical-align: central;
     display: table;
 }
 
 .colorsample a {
     vertical-align: middle;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
     display: table-cell;
-    color: white;
+    color: #fafafa;
     font-size: 22px;
 }
 
@@ -104,7 +104,7 @@ h2 {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
 }
 
 .center {
@@ -132,7 +132,7 @@ h2 {
 }
 
 #intro {
-    color: white;
+    color: #fafafa;
     min-height: 100vh;
     margin: 0;
 }
@@ -153,7 +153,7 @@ h2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #efefef;
-    color: white;
+    color: #fafafa;
     min-height: 500px;
     margin: 0 auto;
     overflow: hidden;
@@ -187,7 +187,7 @@ h2 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #080808;
-    color: white;
+    color: #fafafa;
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
@@ -197,7 +197,7 @@ h2 {
 
 #fifth {
     background: #080808;
-    color: white;
+    color: #fafafa;
     height: auto;
     margin: 0 auto;
 }
