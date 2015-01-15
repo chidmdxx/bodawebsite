@@ -22,8 +22,7 @@ p {
 }
 
 p, ul {
-    font-family:  "Lucida Grande", sans-serif;
-    font-size-adjust: 2;
+    font-family:  "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     font-weight: 900;
     color: white;
     text-shadow: 0 0 3px black;
@@ -36,7 +35,7 @@ img {
 .personatitulo {
     text-align: center;
     font-size: 60px;
-    font-family: "Lucida Grande", sans-serif;
+    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     text-shadow: 0 0 3px black;
     margin: 0;
     margin-top: 10px;
@@ -52,7 +51,7 @@ div.colorsample {
     height: 80px;
     padding: 0;
     position: relative;
-    font-family: "Lucida Grande", sans-serif;
+    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     text-shadow: 0 0 3px black;
     text-align: center;
     line-height: 18px;
@@ -74,15 +73,11 @@ div.colorsample {
 }
 
 h1, #pixels {
-    font-family: "Lucida Grande", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
 }
 
 h2 {
-    font-family: "Lucida Grande", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
 }
 
 #header h1, #pixels {
@@ -92,7 +87,7 @@ h2 {
 .float-intro {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: large;
+    font-size: medium;
 }
 
 .float-left {
@@ -106,7 +101,6 @@ h2 {
 }
 
 .float-center {
-    font-size: 40px;
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
@@ -198,6 +192,7 @@ h2 {
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
+    font-size: xx-large;
 }
 
 #fifth {
@@ -211,7 +206,7 @@ h2 {
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 20px;
+        font-size: medium;
     }
 
 .story {
