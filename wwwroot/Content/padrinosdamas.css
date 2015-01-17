@@ -22,8 +22,7 @@ p {
 }
 
 p, ul {
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    font-weight: 900;
+    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     color: #fafafa;
     text-shadow: 0 0 3px #222222;
 }
@@ -35,7 +34,7 @@ img {
 .personatitulo {
     text-align: center;
     font-size: 60px;
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     text-shadow: 0 0 3px #222222;
     margin: 0;
     margin-top: 10px;
@@ -51,7 +50,7 @@ div.colorsample {
     height: 80px;
     padding: 0;
     position: relative;
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
     text-shadow: 0 0 3px #222222;
     text-align: center;
     line-height: 18px;
@@ -73,11 +72,11 @@ div.colorsample {
 }
 
 h1, #pixels {
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
 }
 
 h2 {
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
 }
 
 #header h1, #pixels {
@@ -87,7 +86,7 @@ h2 {
 .float-intro {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: medium;
+    font-size: 22px;
 }
 
 .float-left {
@@ -171,6 +170,7 @@ h2 {
     #third p {
         color: darkgray;
         text-shadow: none;
+        font-size: 18px;
     }
 
     #third h2 {
@@ -180,6 +180,7 @@ h2 {
         margin-bottom: 20px;
         padding: 0;
         text-align: center;
+        font-size: 35px;
     }
 
 #forth {
@@ -192,7 +193,7 @@ h2 {
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 #fifth {
@@ -206,7 +207,7 @@ h2 {
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: medium;
+        font-size: 22px;
     }
 
 .story {
