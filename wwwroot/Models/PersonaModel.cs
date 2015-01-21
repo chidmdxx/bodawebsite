@@ -14,7 +14,7 @@ namespace wwwroot.Models
         {
             get
             {
-                return string.Format("~/Content/PadrinosDamas/{0}/", this.Nombre);
+                return string.Format("~/Content/PadrinosDamas/{0}/", this.Nombre.Replace(" ",""));
             }
         }
         public string MensajePersonal { get; set; }

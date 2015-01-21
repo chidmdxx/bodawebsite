@@ -1,6 +1,6 @@
 ﻿namespace wwwroot.Data
 {
-    public static class ColoresPantoneData
+    public static class _ColoresPantoneData
     {
         public static string Rojo = "Pantone Solid Coated Bright Red C";
         public static string Naranja = "Pantone Solid Coated 151 C";

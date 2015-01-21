@@ -1,6 +1,6 @@
 ﻿namespace wwwroot.Data
 {
-    public static class ColoresHexData
+    public static class _ColoresHexData
     {
         public static string Rojo = "#ff0000";
         public static string Naranja = "#ff7f00";

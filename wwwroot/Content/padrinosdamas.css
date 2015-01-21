@@ -22,7 +22,7 @@ p {
 }
 
 p, ul {
-    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
     color: #fafafa;
     text-shadow: 0 0 3px #222222;
 }
@@ -34,7 +34,7 @@ img {
 .personatitulo {
     text-align: center;
     font-size: 60px;
-    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
     text-shadow: 0 0 3px #222222;
     margin: 0;
     margin-top: 10px;
@@ -50,7 +50,7 @@ div.colorsample {
     height: 80px;
     padding: 0;
     position: relative;
-    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
     text-shadow: 0 0 3px #222222;
     text-align: center;
     line-height: 18px;
@@ -72,11 +72,11 @@ div.colorsample {
 }
 
 h1, #pixels {
-    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
 }
 
 h2 {
-    font-family: Arapey "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
 }
 
 #header h1, #pixels {

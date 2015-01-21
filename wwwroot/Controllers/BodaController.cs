@@ -16,20 +16,21 @@ namespace wwwroot.Controllers
             id = id ?? string.Empty;
             switch (id.ToLowerInvariant())
             {
-                case "mike": persona = PadrinosData.Mike;
+                case "mike": persona = _PadrinosData.Mike;
                     break;
-                case "tyto": persona = PadrinosData.Tyto;
+                case "adrian":
+                case "deito": persona = _PadrinosData.DeIto;
                     break;
                 case "moy":
-                case "moi": persona = PadrinosData.Moi;
+                case "moi": persona = _PadrinosData.Moi;
                     break;
-                case "vaj": persona = PadrinosData.Vaj;
+                case "vaj": persona = _PadrinosData.Vaj;
                     break;
-                case "franco": persona = PadrinosData.Franco;
+                case "franco": persona = _PadrinosData.Franco;
                     break;
-                case "ruheri": persona = PadrinosData.Ruheri;
+                case "ruheri": persona = _PadrinosData.Ruheri;
                     break;
-                case "edwin": persona = PadrinosData.Edwin;
+                case "edwin": persona = _PadrinosData.Edwin;
                     break;
                 default: return new HttpNotFoundResult("Hey no eres padrino, o no escribiste bien tu nombre");
             }
@@ -42,20 +43,20 @@ namespace wwwroot.Controllers
             id = id ?? string.Empty;
             switch (id.ToLowerInvariant().Trim())
             {
-                case "anilu": persona = DamasData.Anilu;
+                case "anilu": persona = _DamasData.Anilu;
                     break;
-                case "annie": persona = DamasData.Annie;
+                case "annie": persona = _DamasData.Annie;
                     break;
-                case "dyanne": persona = DamasData.Dyanne;
+                case "dyanne": persona = _DamasData.Dyanne;
                     break;
-                case "gra": persona = DamasData.Gra;
+                case "gra": persona = _DamasData.Gra;
                     break;
-                case "karlita": persona = DamasData.Karlita;
+                case "karlita": persona = _DamasData.Karlita;
                     break;
                 case "melisa":
-                case "mel": persona = DamasData.Mel;
+                case "mel": persona = _DamasData.Mel;
                     break;
-                case "zita": persona = DamasData.Zita;
+                case "zita": persona = _DamasData.Zita;
                     break;
                 default: return new HttpNotFoundResult("Esa dama no existe :p");
             }

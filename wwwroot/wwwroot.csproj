@@ -161,10 +161,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BodaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\ColoresHexData.cs" />
-    <Compile Include="Data\ColoresPantoneData.cs" />
-    <Compile Include="Data\DamasData.cs" />
-    <Compile Include="Data\PadrinosData.cs" />
+    <Compile Include="Data\_ColoresHexData.cs" />
+    <Compile Include="Data\_ColoresPantoneData.cs" />
+    <Compile Include="Data\_DamasData.cs" />
+    <Compile Include="Data\_PadrinosData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,11 +176,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\padrinosdamas.css" />
+    <Content Include="Content\PadrinosDamas\Anilu\1.jpg" />
     <Content Include="Content\PadrinosDamas\Anilu\2.jpg" />
     <Content Include="Content\PadrinosDamas\Anilu\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Annie\1.jpg" />
     <Content Include="Content\PadrinosDamas\Annie\2.jpg" />
     <Content Include="Content\PadrinosDamas\Annie\lego.jpg" />
+    <Content Include="Content\PadrinosDamas\DeIto\1.jpg" />
+    <Content Include="Content\PadrinosDamas\DeIto\2.jpg" />
+    <Content Include="Content\PadrinosDamas\DeIto\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Dyanne\1.jpg" />
     <Content Include="Content\PadrinosDamas\Dyanne\2.jpg" />
     <Content Include="Content\PadrinosDamas\Dyanne\lego.jpg" />
@@ -205,9 +209,6 @@
     <Content Include="Content\PadrinosDamas\Moi\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\1.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\lego.jpg" />
-    <Content Include="Content\PadrinosDamas\Tyto\1.jpg" />
-    <Content Include="Content\PadrinosDamas\Tyto\2.jpg" />
-    <Content Include="Content\PadrinosDamas\Tyto\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\1.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\2.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\lego.jpg" />
