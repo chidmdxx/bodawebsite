@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -209,6 +210,7 @@
     <Content Include="Content\PadrinosDamas\Moi\2.jpg" />
     <Content Include="Content\PadrinosDamas\Moi\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\1.jpg" />
+    <Content Include="Content\PadrinosDamas\Ruheri\2.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\1.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\2.jpg" />

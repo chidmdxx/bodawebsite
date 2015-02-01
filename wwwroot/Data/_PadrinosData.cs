@@ -10,8 +10,8 @@ namespace wwwroot.Data
             Color = _ColoresHexData.Verde,
             ColorPantone = _ColoresPantoneData.Verde,
             MensajePersonal = @"Para mi siempre has sido como un hermano y me gustaria que 
-                                fueras parte de la boda como mi best man. Se que ya te lo había pedido
-                                pero así puedes ver el Lego que armamos para esto"
+                                fueras parte de la boda como mi best man. Se que ya te lo había pedido y que soy terrible
+                                en escribir estas cosas, y realmente significa mucho que estes haciendo esto."
         };
 
         public static PersonaModel DeIto = new PersonaModel
@@ -30,7 +30,8 @@ namespace wwwroot.Data
             Color = _ColoresHexData.AzulClaro,
             ColorPantone = _ColoresPantoneData.AzulClaro,
             MensajePersonal = @"No llevamos tanto tiempo de conocernos, pero eso no importa, eres de las personas
-                                que mas quiero y para mi sería un placer que fueras uno de mis padrinos en la boda :D"
+                                que mas quiero y para mi sería un placer que fueras uno de mis padrinos en la boda :D
+                                (además de que la foto jugando Magic se ve super cool)"
         };
 
         public static PersonaModel Vaj = new PersonaModel
@@ -39,7 +40,8 @@ namespace wwwroot.Data
             Color = _ColoresHexData.Naranja,
             ColorPantone = _ColoresPantoneData.Naranja,
             MensajePersonal = @"Hermano, eres de los primeros en saber que esto pasaría, y de los primeros en saber que nos
-                                casariamos, y me gustaría que fueras uno de mis padrinos"
+                                casariamos, y me gustaría que fueras uno de mis padrinos, gracias por siempre haber estado a mi lado
+                                y por todo el apoyo que me has dado :D"
         };
 
         public static PersonaModel Franco = new PersonaModel
@@ -48,8 +50,8 @@ namespace wwwroot.Data
             Color = _ColoresHexData.Amarillo,
             ColorPantone = _ColoresPantoneData.Amarillo,
             MensajePersonal = @"Franco, eres super chido, te quiero y eres un hermano para mi, sería un placer que fueras
-                                uno de los padrinos en nuestra boda. (no te dije mientras andabas aca por falta del Lego) 
-                                y si esto esta en Azure y github, porfa no trates de romper la página"
+                                uno de los padrinos en nuestra boda. (no te dije mientras andabas aca por faltaba el Lego) 
+                                y si esto esta en Azure y github, porfa no trates de romper la página o de burlarte de lo malo que soy en UX"
         };
 
         public static PersonaModel Ruheri = new PersonaModel
@@ -58,7 +60,8 @@ namespace wwwroot.Data
             Color = _ColoresHexData.Rojo,
             ColorPantone = _ColoresPantoneData.Rojo,
             MensajePersonal = @"Eres literalmente mi hermano y aunque tengamos nuestras diferencias, te quiero y estimo
-                                mucho, por eso quiero que estes entre los padrinos de la boda."
+                                mucho, por eso quiero que estes entre los padrinos de la boda. Gracias por toda experiencia
+                                y por todo momento juntos, sabes que siempre me tendrás para apoyarte."
         };
 
         public static PersonaModel Edwin = new PersonaModel
@@ -66,9 +69,8 @@ namespace wwwroot.Data
             Nombre = "Edwin",
             Color = _ColoresHexData.Morado,
             ColorPantone = _ColoresPantoneData.Morado,
-            MensajePersonal = @"Si hay alguien en quien puedo contar en contigo Ed, te quiero mucho y sería un honor que
-                                fueras un padrino en la boda. (ya se que tienes el Lego pero pues ya tenía lo foto
-                                y quería hacer la foto)"
+            MensajePersonal = @"Si hay alguien en quien puedo contar eres tú, te quiero mucho y sería un honor que
+                                fueras un padrino en la boda. Gracias por todo momento que hemos pasado y que se que pasaremos :)"
         };
     }
 }
