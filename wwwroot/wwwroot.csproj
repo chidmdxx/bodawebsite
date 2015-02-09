@@ -212,6 +212,9 @@
     <Content Include="Content\PadrinosDamas\Ruheri\1.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\2.jpg" />
     <Content Include="Content\PadrinosDamas\Ruheri\lego.jpg" />
+    <Content Include="Content\PadrinosDamas\Tyto\2.jpg" />
+    <Content Include="Content\PadrinosDamas\Tyto\1.jpg" />
+    <Content Include="Content\PadrinosDamas\Tyto\lego.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\1.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\2.jpg" />
     <Content Include="Content\PadrinosDamas\Vaj\lego.jpg" />
@@ -281,6 +284,7 @@
     <Content Include="Views\Boda\Padrinos.cshtml" />
     <Content Include="Views\Boda\_Persona.cshtml" />
     <Content Include="Views\Boda\Damas.cshtml" />
+    <Content Include="Views\Boda\Damo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

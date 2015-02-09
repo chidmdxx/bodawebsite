@@ -1,0 +1,52 @@
+﻿@model wwwroot.Models.PersonaModel
+@{
+    Layout = "~/Views/Boda/_Persona.cshtml";
+}
+
+@section Personal
+{
+    <p>
+        ¡Hola @Model.Nombre! ¡A Chid y a mi nos da mucho gusto contar contigo para este día tan especial para nosotros!
+        En la boda vamos a usar los 7 colores del arcoiris, cada dama tiene asignado un color, el que te toca es el color de la playera de tu lego-dama.
+        El color exacto en hexadecimal es @Model.Color y en Pantone es @Model.ColorPantone, cada dama va a llevar su color designado en el ramo, los zapatos (todas las damas llevan el mismo modelo, el cual te avisare donde conseguirlos) y si quieres en tus accesorios (esto depende de cada quien).
+        <br />
+    </p>
+    <p>
+        @Model.MensajePersonal
+        <br />
+    </p>
+}
+@section Peticion1
+{
+    <p>
+        Ayudar con la planeación para los eventos, además de ayudar con la despedida de Chid.
+        <br />
+    </p>
+}
+@section Peticion2
+{
+    <p>
+        El tema de la boda es vintage, entonces para decorar la recepción ando recolectando marcos de fotos antiguos (cualquier tamaño), teteras, tazas, canastas, cámaras, floreros y cosas similares. Si tienen algo de esto que ya no quieran o no necesiten (pues no prometo que regresen :/) y quieren donarlos a la causa me ayudarían mucho n.n
+        <br />
+    </p>
+}
+@section Peticion3
+{
+    <p>
+        Muchas cosas van a ser hechas a mano para darle ese toque unico y personal, si te gusta hacer manualidades y quieres ayudarme con algo avisame y estare encantada :D
+    </p>
+}
+@section Necesitar
+{
+    <p>
+        ¡Por ahora eso es todo! Gracias por toda tu ayuda y estamos en contacto para ver los detalles de tu checklist n.n ¡Besos!
+    </p>
+    <br />
+    <b>Check list:</b>
+    <ul>
+        <li>Moño</li>
+        <li>Fajilla</li>
+        <li>Pañuelo</li>
+        <li>Tux negro</li>b
+    </ul>
+}

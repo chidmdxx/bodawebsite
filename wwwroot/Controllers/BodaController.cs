@@ -62,5 +62,24 @@ namespace wwwroot.Controllers
             }
             return View(persona);
         }
+
+        public ActionResult Damo(string id)
+        {
+            PersonaModel persona;
+            id = id ?? string.Empty;
+            switch (id.ToLowerInvariant().Trim())
+            {
+                case "tyto": persona = persona = new PersonaModel
+                    {
+                        Nombre = "Tyto",
+                        Color = "#5b5d62",
+                        ColorPantone = "Pantone Uncoated 433 U",
+                        MensajePersonal = "Tyto, siempre hemos podido confiar en ti, y desde que empezamos a salir habíamos bromeado con tener que pelear por el lado de quien estarías durante la boda así que llegamos a este punto intermedio :D"
+                    };
+                    break;
+                default: return new HttpNotFoundResult();
+            }
+            return View(persona);
+        }
     }
 }
