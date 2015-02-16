@@ -176,6 +176,20 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\FotosIndex\1.jpg" />
+    <Content Include="Content\FotosIndex\2.jpg" />
+    <Content Include="Content\FotosIndex\3.jpg" />
+    <Content Include="Content\FotosIndex\4.jpg" />
+    <Content Include="Content\FotosIndex\8.jpg" />
+    <Content Include="Content\FotosIndex\7.jpg" />
+    <Content Include="Content\FotosIndex\6.jpg" />
+    <Content Include="Content\FotosIndex\5.jpg" />
+    <Content Include="Content\FotosIndex\9.jpg" />
+    <Content Include="Content\FotosIndex\0.jpg" />
+    <Content Include="Content\FotosIndex\fiesta.svg" />
+    <Content Include="Content\FotosIndex\hotel.svg" />
+    <Content Include="Content\FotosIndex\iglesia.svg" />
+    <Content Include="Content\FotosIndex\_5.png" />
     <Content Include="Content\padrinosdamas.css" />
     <Content Include="Content\PadrinosDamas\Anilu\1.jpg" />
     <Content Include="Content\PadrinosDamas\Anilu\2.jpg" />
@@ -231,7 +245,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="parallax.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\wwwmdxx.pubxml" />

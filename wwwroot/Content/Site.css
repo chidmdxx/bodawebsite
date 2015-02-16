@@ -19,24 +19,25 @@ body {
 
 p {
     margin: 0 0 30px 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p, ul {
-    font-family:  "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    font-weight: 900;
-    color: white;
-    text-shadow: 0 0 3px black;
+    font-family: 'Open Sans', Corbel, sans-serif;
+    color: #fafafa;
+    text-shadow: 0 0 3px #222222;
 }
 
 img {
     border: 0;
 }
 
-.personatitulo {
+.titulo {
     text-align: center;
     font-size: 60px;
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    text-shadow: 0 0 3px black;
+    font-family: 'Open Sans', Corbel, sans-serif;
+    text-shadow: 0 0 3px #222222;
     margin: 0;
     margin-top: 10px;
 }
@@ -51,33 +52,33 @@ div.colorsample {
     height: 80px;
     padding: 0;
     position: relative;
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
-    text-shadow: 0 0 3px black;
+    font-family: 'Open Sans', Corbel, sans-serif;
+    text-shadow: 0 0 3px #222222;
     text-align: center;
     line-height: 18px;
     background: grey;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    color: white;
+    color: #fafafa;
     vertical-align: central;
     display: table;
 }
 
 .colorsample a {
     vertical-align: middle;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
     display: table-cell;
-    color: white;
+    color: #fafafa;
     font-size: 22px;
 }
 
 h1, #pixels {
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
 }
 
 h2 {
-    font-family: "Lucida Grande", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+    font-family: 'Open Sans', Corbel, sans-serif;
 }
 
 #header h1, #pixels {
@@ -87,7 +88,7 @@ h2 {
 .float-intro {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: medium;
+    font-size: 22px;
 }
 
 .float-left {
@@ -104,7 +105,7 @@ h2 {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px #222222;
 }
 
 .center {
@@ -121,6 +122,7 @@ h2 {
     list-style: none;
     position: fixed;
     right: 20px;
+    z-index: 1000;
 }
 
     #nav li {
@@ -132,9 +134,13 @@ h2 {
 }
 
 #intro {
-    color: white;
+    color: #fafafa;
     min-height: 100vh;
     margin: 0;
+    background-image: url("FotosIndex/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .legoimage {
@@ -149,17 +155,27 @@ h2 {
 }
 
 #second {
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #efefef;
-    color: white;
-    min-height: 500px;
+    background-color: #080808;
+    color: #fafafa;
+    min-height: 600px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
     padding: 0;
     height: 100vh;
 }
+
+    #second .bg {
+        background: url("FotosIndex/5.jpg") no-repeat fixed 50% 0px;
+        background-size: contain;
+        height: auto;
+        margin-top: 20px;
+        padding: 0px;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
 
 #third {
     background-color: #efefef;
@@ -171,6 +187,7 @@ h2 {
     #third p {
         color: darkgray;
         text-shadow: none;
+        font-size: 18px;
     }
 
     #third h2 {
@@ -180,43 +197,73 @@ h2 {
         margin-bottom: 20px;
         padding: 0;
         text-align: center;
+        font-size: 35px;
+    }
+
+    #third .icon {
+        width: 30%;
+        margin-left: 35%;
+        vertical-align: text-top;
+        height: auto;
+        opacity: 0.4;
     }
 
 #forth {
+    background: url("FotosIndex/4.jpg") no-repeat fixed 50% 0px;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #080808;
-    color: white;
-    height: 100vh;
+    color: #fafafa;
+    min-height: 100vh;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
+    #forth float-left {
+        margin-bottom: 10px;
+    }
+
 #fifth {
-    background: #080808;
-    color: white;
-    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #080808;
+    color: #fafafa;
+    height: 100vh;
     margin: 0 auto;
 }
+
+    #fifth .bg2 {
+        background: url("SaveTheDate/1.jpg") no-repeat fixed 50% 0px;
+        background-size: contain;
+        height: auto;
+        margin-top: 20px;
+        padding: 0px;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
 
     #fifth p {
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: medium;
+        font-size: 22px;
     }
 
 .story {
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
+    height: 100%;
 }
 
     .story .float-left, .story .float-right {
         padding: 5% 0 0 0;
         position: relative;
-        width: 50%;
+        width: 45%;
+        z-index: 200;
     }

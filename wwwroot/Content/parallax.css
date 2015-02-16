@@ -91,7 +91,7 @@ h2{
 }
 
 #second{
-	background: url(Parallax/opcion2.jpg) 50% 0 no-repeat fixed;
+	background: #ccc;
     background-size:100%;
 	color: white;
 	height: 1300px;
