@@ -186,9 +186,9 @@
     <Content Include="Content\FotosIndex\5.jpg" />
     <Content Include="Content\FotosIndex\9.jpg" />
     <Content Include="Content\FotosIndex\0.jpg" />
-    <Content Include="Content\FotosIndex\fiesta.svg" />
-    <Content Include="Content\FotosIndex\hotel.svg" />
-    <Content Include="Content\FotosIndex\iglesia.svg" />
+    <Content Include="Content\FotosIndex\fiesta.png" />
+    <Content Include="Content\FotosIndex\hotel.png" />
+    <Content Include="Content\FotosIndex\iglesia.png" />
     <Content Include="Content\FotosIndex\_5.png" />
     <Content Include="Content\padrinosdamas.css" />
     <Content Include="Content\PadrinosDamas\Anilu\1.jpg" />
