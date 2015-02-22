@@ -27,20 +27,17 @@
                 //xPosition - Horizontal position of the element
                 //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
                 //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-                $('#intro').parallax("50%", 0.1);
-                $('#second').parallax("50%", 0.1);
-                $('#third').parallax("50%", 0.1);
-                $('#forth').parallax("50%", 0.1);
-                $('#fifth').parallax("50%", 0.1);
+                $('#intro').parallax("50%", 0.2);
+                $('#forth').parallax("50%", 0.2);
                 var $window = $(window);
                 var wWidth = $window.width();
                 if (wWidth < 970) {
-                    $('.bg').parallax("50%", 0.4);
-                    $('.bg2').parallax("50%", 0.4);
+                    $('.bg').parallax("50%", -0.3);
+                    $('.bg2').parallax("50%", -0.3);
                 }
                 else {
-                    $('.bg').parallax("13%", 0.4);
-                    $('.bg2').parallax("80%", 0.4);
+                    $('.bg').parallax("13%", -0.3);
+                    $('.bg2').parallax("80%", -0.3);
 
                 }
             }
