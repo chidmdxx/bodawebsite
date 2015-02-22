@@ -18,7 +18,7 @@ body {
 }
 
 p {
-    margin: 0 0 30px 0;
+    margin: 20px 0 10px 0;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -37,6 +37,15 @@ img {
     text-align: center;
     font-size: 60px;
     font-family: 'Open Sans', Corbel, sans-serif;
+    text-shadow: 0 0 3px #222222;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.saveTheDate {
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Pinyon Script','Open Sans', Corbel, sans-serif;
     text-shadow: 0 0 3px #222222;
     margin: 0;
     margin-top: 10px;
@@ -129,7 +138,7 @@ h2 {
         margin: 0 0 15px 0;
     }
 
-#header, #intro, #second {
+#header, #intro, #second #third #forth #fifth #sixth {
     width: 100%;
 }
 
@@ -159,22 +168,24 @@ h2 {
     background-attachment: fixed;
     background-color: #080808;
     color: #fafafa;
-    min-height: 600px;
+    min-height: 100vh;
     margin: 0 auto;
     overflow: auto;
     padding: 0;
-    height: 100vh;
 }
 
     #second .bg {
-        background: url("FotosIndex/5.jpg") no-repeat fixed 50% 0px;
+        background: url("SaveTheDate/1.jpg") no-repeat fixed 50% 0px;
         background-size: contain;
-        height: auto;
-        margin-top: 20px;
-        padding: 0px;
-        position: absolute;
-        width: 100%;
-        z-index: 100;
+    }
+
+    #second h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #second p {
+        font-size: 22px;
     }
 
 #third {
@@ -208,6 +219,10 @@ h2 {
         opacity: 0.4;
     }
 
+    #third p{
+        text-align: center;
+    }
+
 #forth {
     background: url("FotosIndex/4.jpg") no-repeat fixed 50% 0px;
     background-size: cover;
@@ -223,24 +238,23 @@ h2 {
     font-size: 30px;
 }
 
+    #forth .float-left {
+        margin-bottom: 50px;
+    }
+
 #fifth {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #080808;
     color: #fafafa;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     margin: 0 auto;
 }
 
     #fifth .bg2 {
-        background: url("SaveTheDate/1.jpg") no-repeat fixed 50% 0px;
+        background: url("FotosIndex/5.jpg") no-repeat fixed 50% 0px;
         background-size: contain;
-        height: auto;
-        margin-top: 20px;
-        padding: 0px;
-        position: absolute;
-        width: 100%;
-        z-index: 100;
     }
 
     #fifth p {
@@ -250,11 +264,27 @@ h2 {
         font-size: 22px;
     }
 
+#sixth {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #e8eef7;
+    color: #fafafa;
+    min-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+}
+
+    #sixth iframe {
+        width: 100%;
+        height: 900px;
+    }
+
 .story {
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
     height: 100%;
+    z-index: 200;
 }
 
     .story .float-left, .story .float-right {

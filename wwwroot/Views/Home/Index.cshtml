@@ -2,7 +2,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Boda Majo y Chid";
     ViewBag.Meses = 11 - DateTime.Now.Month;
-    ViewBag.Dias = (new DateTime(2015, 11, 14) - DateTime.Now).Days;
 }
 
 @section header
@@ -19,26 +18,86 @@
             //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
             $('#intro').parallax("50%", 0.1);
             $('#second').parallax("50%", 0.1);
-            $('.bg').parallax("10%", 0.4);
             $('#third').parallax("50%", 0.1);
             $('#forth').parallax("50%", 0.1);
             $('#fifth').parallax("50%", 0.1);
-            $('.bg2').parallax("80%", 0.4);
+            var $window = $(window);
+            var wWidth = $window.width();
+            if (wWidth < 970) {
+                $('.bg').parallax("50%", 0.4);
+                $('.bg2').parallax("50%", 0.4);
+            }
+            else {
+                $('.bg').parallax("13%", 0.4);
+                $('.bg2').parallax("80%", 0.4);
+
+            }
         })
+
+        window.addEventListener("resize", resizeFunction);
+        function resizeFunction() {
+            var $window = $(window);
+            var wWidth = $window.width();
+            if (wWidth < 970) {
+                $('.bg').parallax("50%", 0.4);
+                $('.bg2').parallax("50%", 0.4);
+            }
+            else {
+                $('.bg').parallax("13%", 0.4);
+                $('.bg2').parallax("80%", 0.4);
+
+            }
+        }
+
+        CountDownTimer('11/14/2015 12:00 PM', 'countdown');
+
+        function CountDownTimer(dt, id) {
+            var end = new Date(dt);
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.getElementById(id).innerHTML = 'Ya es la boda!';
+
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+                document.getElementById(id).innerHTML = days + ' días ';
+                document.getElementById(id).innerHTML += hours + ' horas ';
+                document.getElementById(id).innerHTML += minutes + ' minutos ';
+                document.getElementById(id).innerHTML += seconds + ' segundos';
+            }
+
+            timer = setInterval(showRemaining, 1000);
+        }
     </script>
 }
 <ul id="nav">
-    <li><a href="#intro" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-    <li><a href="#second" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-    <li><a href="#third" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-    <li><a href="#forth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
-    <li><a href="#fifth" title="Next Section"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#intro" title="Intro"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#second" title="Info"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#third" title="Datos"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#forth" title="Fotos"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#fifth" title="Mesa de regalos"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
+    <li><a href="#sixth" title="RSVP"><img src="~/Content/Parallax/dot.png" alt="Link" /></a></li>
 </ul>
 
 <div id="intro">
     <div class="story">
         <div class="float-intro">
-            <h2 class="titulo">Save the Date</h2>
+            <h2 class="saveTheDate">Save the Date</h2>
             <h2 class="titulo">14 Noviembre 2015</h2>
             <h2 class="titulo">Atlixco, Puebla</h2>
         </div>
@@ -46,13 +105,17 @@
 </div> <!--#intro-->
 
 <div id="second">
-    <div class="story">
-        <div class="bg"> <img src="~/Content/FotosIndex/_5.png" /> </div>
-        <div class="float-right">
-            <h2>Sobre la boda</h2>
-            <p>Si estas viendo esto, muy posiblemente es porque estás invitado a nuestra boda</p>
-            <p>La fecha es el 14 de Noviembre del 2015, a tan solo @ViewBag.Meses meses de hoy, más exacto a @ViewBag.Dias días</p>
-            <p>Esperamos que puedas marcar esa fecha en tu calendario y nos acompañes.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 bg">
+                <img class="img-responsive" src="~/Content/SaveTheDate/_1.png" />
+            </div>
+            <div class="col-md-7">
+                <h2>Sobre la boda</h2>
+                <p>Si estas viendo esto, muy posiblemente es porque estás invitado a nuestra boda</p>
+                <p>La fecha es el 14 de Noviembre del 2015, a tan solo @ViewBag.Meses meses de hoy, más exacto a <span id="countdown"></span></p>
+                <p>Esperamos que puedas marcar esa fecha en tu calendario y nos acompañes.</p>
+            </div>
         </div>
     </div> <!--.story-->
 </div><!--#second-->
@@ -64,14 +127,15 @@
             <div class="col-md-4">
                 <img class="icon" src="~/Content/FotosIndex/iglesia.png" />
                 <h2>Misa</h2>
-                <p>Iglesia Nuestra Señora del Camino</p>
-                <p><a href="http://goo.gl/maps/yLmn7">Via Atlixcayotl 72450 Puebla, Puebla</a></p>
+                <p>Coming soon!</p>
+                <!--<p>Iglesia Nuestra Señora del Camino</p>
+                <p><a href="http://goo.gl/maps/yLmn7" target="_blank">Via Atlixcayotl 72450 Puebla, Puebla</a></p>-->
             </div>
             <div class="col-md-4">
                 <img class="icon" src="~/Content/FotosIndex/fiesta.png" />
                 <h2>Fiesta</h2>
                 <p>Ex-hacienda La Alfonsina</p>
-                <p><a href="http://goo.gl/maps/kyjTp">Boulevard Niños Héroes 808 Atlixco, Puebla</a></p>
+                <p><a href="http://goo.gl/maps/kyjTp" target="_blank">Boulevard Niños Héroes 808 Atlixco, Puebla</a></p>
             </div>
             <div class="col-md-4">
                 <img class="icon" src="~/Content/FotosIndex/hotel.png" />
@@ -85,34 +149,45 @@
 </div> <!--#third-->
 
 <div id="forth">
-    <div class="story">
-        <div class="float-left"> <div style="width: 500px;"><div style="width: 500px; height: 716px; background-image: url('http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/8d46e71a261eaf86a271812fab09909c.jpg'); position: relative; font-family: Arial, Helvetica, sans-serif; line-height: 1px;"><div style="font-family: Arial, Helvetica, sans-serif; width: 500px; height: 96px; color: #ffffff; font-weight: 700; padding-top: 17px; position: absolute; top: 274px;"><div style="font-size: 20px; text-align: center; height: 34px; line-height: 30px; width: 100%;" align="center"> USE WEDDING ID: <span style="color: #ff0096;">bodamajoychid</span></div><div style="font-size: 14px; text-align: center; height: 30px; width: 100%; margin-top: 12px;" align="center"> OUR WEDPICS SITE: <span style="color: #ff0096;"><a href='https://www.wedpics.com/wedding/MTA1MDI4MQ/album' target='_blank' style="text-decoration:none; color:#ff0096;">www.wedpics.com/wedding/MTA1MDI4MQ/album</a></span></div></div></div><div style="width: 500px;"><img alt="Get apps text" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/eaa980338edfe7ed3ac1b1c5227f2cc9.png"><a href="https://itunes.apple.com/app/wedpics-wedding-photo-app/id549402355?mt=8" target="_blank" style="text-decoration: none;"><img alt="app store link" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/9361d4730c5d3be9dd2da5efa3a1bd69.png"></a><a href="https://play.google.com/store/apps/details?id=com.dejami.WedPics&hl=en" target="_blank" style="text-decoration: none;"><img alt="Google Play Store link" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/6d0f71bb43acb9a0a34d00272e657cc8.png"></a></div><div style="width: 500px; height: 165px; font-family: Arial, Helvetica, sans-serif; background-image: url('http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/b1373ed8e09157503bba714c38f4f564.jpg'); position: relative;"><div style="color: #ff0096; font-size: 16px; font-weight: 700; position: absolute; top: 100px; left: 22px;"><a href="https://www.wedpics.com/wedding/MTA1MDI4MQ/album" target="_blank" style="text-decoration:none; color:#ff0096;">www.wedpics.com/wedding/MTA1MDI4MQ/album</a></div></div></div> </div>
-        <br />
-        <div class="float-right">
-            <p>
-                Nos gusta mucho la idea de intentar algo nuevo, y poder tener la oportunidad de ver la perspectiva de todos, así que estamos usando WedPics para eso, hay una app para iOS y una para Android y si usan la clave 'bodamajoychid' pueden subir sus fotos desde el teléfono o si tienen cámaras más cool pueden usar <a href="https://wedpics.com">el sitio web</a>.
-            </p>
-        </div>
-    </div> <!--.story-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"> <div style="width: 500px;"><div style="width: 500px; height: 716px; background-image: url('http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/8d46e71a261eaf86a271812fab09909c.jpg'); position: relative; font-family: Arial, Helvetica, sans-serif; line-height: 1px;"><div style="font-family: Arial, Helvetica, sans-serif; width: 500px; height: 96px; color: #ffffff; font-weight: 700; padding-top: 17px; position: absolute; top: 274px;"><div style="font-size: 20px; text-align: center; height: 34px; line-height: 30px; width: 100%;" align="center"> USE WEDDING ID: <span style="color: #ff0096;">bodamajoychid</span></div><div style="font-size: 14px; text-align: center; height: 30px; width: 100%; margin-top: 12px;" align="center"> OUR WEDPICS SITE: <span style="color: #ff0096;"><a href='https://www.wedpics.com/wedding/MTA1MDI4MQ/album' target='_blank' style="text-decoration:none; color:#ff0096;">www.wedpics.com/wedding/MTA1MDI4MQ/album</a></span></div></div></div><div style="width: 500px;"><img alt="Get apps text" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/eaa980338edfe7ed3ac1b1c5227f2cc9.png"><a href="https://itunes.apple.com/app/wedpics-wedding-photo-app/id549402355?mt=8" target="_blank" style="text-decoration: none;"><img alt="app store link" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/9361d4730c5d3be9dd2da5efa3a1bd69.png"></a><a href="https://play.google.com/store/apps/details?id=com.dejami.WedPics&hl=en" target="_blank" style="text-decoration: none;"><img alt="Google Play Store link" src="http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/6d0f71bb43acb9a0a34d00272e657cc8.png"></a></div><div style="width: 500px; height: 165px; font-family: Arial, Helvetica, sans-serif; background-image: url('http://b55c4c37b2ccd150548a-ba0da4af74db9f9dcab04158fe0a2716.r70.cf1.rackcdn.com/b1373ed8e09157503bba714c38f4f564.jpg'); position: relative;"><div style="color: #ff0096; font-size: 16px; font-weight: 700; position: absolute; top: 100px; left: 22px;"><a href="https://www.wedpics.com/wedding/MTA1MDI4MQ/album" target="_blank" style="text-decoration:none; color:#ff0096;">www.wedpics.com/wedding/MTA1MDI4MQ/album</a></div></div></div> </div>
+            <br />
+            <div class="col-md-6">
+                <p>
+                    Nos encantaría ver las fotos que tomen durante el evento, y para eso estamos usando una aplicación llamada wedpics para iOS y Android y si usan la clave "bodamajoychid" pueden subir sus fotos desde el teléfono o si tienen cámaras más cool (O windows phone) pueden usar <a href="https://wedpics.com" target="_blank">el sitio web</a>.
+                </p>
+                <p>Si toman fotos durante el evento y quieren usar otra red social, les pedimos que usen el hashtag #bodamajoychid</p>
+            </div>
+        </div> <!--.story-->
+    </div>
 </div><!--#second-->
 
 
 <div id="fifth">
-    <div class="story">
-        <div class="bg2"> <img src="~/Content/FotosIndex/_5.png" /> </div>
-        <div class="float-left">
-            <p>
-                Dado que vamos a vivir en Seattle después de la boda no vamos a poner una mesa de regalos, su presencia es el mejor regalo que pueden darnos.
-            </p>
-            <p>
-                Pero si aún asi quieren darnos un regalo estamos buscando la opción de poner una cuenta bancaria para hacer una transferencia.
-            </p>
-            <p>
-                También estamos viendo usar <a href="http://www.travelersjoy.com/majoychid">Traveler's Joy</a> por si quieren ayudarnos para nuestra luna de miel :).
-            </p>
-            <p>
-                Más que nada esperamos poder verlos y pasar un increíble momento a su lado.
-            </p>
-        </div>
-    </div> <!--.story-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <p>
+                    El estar con ustedes en el día más feliz de nuestras vidas es el mejor regalo que podríamos pedir.
+                </p>
+                <p>
+                    Si aun así desean ayudarnos en esta nueva etapa de nuestras vidas contamos con una cuenta de banco donde nos pueden depositar su regalo (el número de cuenta vendrá incluido en sus invitaciones).
+                </p>
+                <p>
+                    Si desean ser más específicos con su regalo tenemos cuenta en <a href="http://www.travelersjoy.com/majoychid" target="_blank">Traveler's Joy</a>, una página que funciona como  mesa de regalos para nuestra luna de miel donde pueden regalarnos entradas a museos, restaurantes y todo tipo de experiencias en nuestra luna de miel.
+                </p>
+                <p>
+                    Más que nada esperamos poder verlos y pasar un increíble momento a su lado.
+                </p>
+
+            </div>
+            <div class="col-md-5 bg2"> <img class="img-responsive" src="~/Content/FotosIndex/_5.png" /> </div>
+        </div> <!--.story-->
+    </div>
+</div><!--#second-->
+
+
+<div id="sixth">
+    <iframe src="https://docs.google.com/forms/d/1ClMrI_pVYA84XlX-2LOmi5PQbM8ppo2Z0wq8BlqDmyM/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div><!--#second-->
