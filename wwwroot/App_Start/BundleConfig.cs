@@ -27,6 +27,7 @@ namespace wwwroot
                       "~/Scripts/jquery-1.6.4.min.js",
                       "~/Scripts/jquery.parallax-1.1.3.js",
                       "~/Scripts/jquery.localscroll-1.2.7-min.js",
+                      "~/Scripts/storm.js",
                       "~/Scripts/jquery.scrollTo-1.4.2-min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

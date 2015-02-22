@@ -237,8 +237,8 @@
     <Content Include="Content\PadrinosDamas\Zita\lego.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\parallax.css" />
     <Content Include="Content\Parallax\dot.png" />
+    <Content Include="Content\Parallax\heart9.gif" />
     <Content Include="Content\SaveTheDate\1.jpg" />
     <Content Include="Content\SaveTheDate\2.jpg" />
     <Content Include="Content\SaveTheDate\_1.png" />
@@ -264,6 +264,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\storm.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

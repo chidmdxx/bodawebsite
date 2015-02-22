@@ -218,7 +218,7 @@ h2 {
         opacity: 0.4;
     }
 
-    #third p{
+    #third p {
         text-align: center;
     }
 
@@ -276,6 +276,17 @@ h2 {
         width: 100%;
         height: 1150px;
     }
+
+
+#fotoExtra {
+    color: #fafafa;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("FotosIndex/0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .story {
     margin: 0 auto;
