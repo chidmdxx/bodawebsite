@@ -2,8 +2,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Boda Majo y Chid";
     ViewBag.Meses = 11 - DateTime.Now.Month;
-    ViewBag.Meses = DateTime.Now.Day < 14 ? ViewBag.Meses + 1 : ViewBag.Meses
-    @ViewBag.MesesText = ViewBag.Meses > 1 ? "meses" : "mes"
+    ViewBag.Meses = DateTime.Now.Day < 14 ? ViewBag.Meses + 1 : ViewBag.Meses;
+    ViewBag.MesesText = ViewBag.Meses > 1 ? "meses" : "mes";
 }
 
 
@@ -137,7 +137,7 @@
                 {
                     <p>La fecha es el 14 de Noviembre del 2015 a la 1:00 PM, más exacto a <span id="countdown"></span></p>
                 }
-                else if (DateTime.Now == new DateTime(2015, 11, 14, 13, 0, 0))
+                else if (DateTime.Now > new DateTime(2015, 11, 14) && DateTime.Now < new DateTime(2015, 11, 15))
                 {
                     <p>La fecha es el 14 de Noviembre del 2015 a la 1:00 PM, eso es hoy, más exacto a <span id="countdown"></span></p>
                 }
