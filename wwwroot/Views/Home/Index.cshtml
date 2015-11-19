@@ -76,14 +76,7 @@
 
             function showRemaining() {
                 var now = new Date();
-                var distance = end - now;
-                if (distance < 0) {
-
-                    clearInterval(timer);
-                    document.getElementById(id).innerHTML = 'Ya es la boda!';
-
-                    return;
-                }
+                var distance = now - end;
                 var days = Math.floor(distance / _day);
                 var hours = Math.floor((distance % _day) / _hour);
                 var minutes = Math.floor((distance % _hour) / _minute);
@@ -143,10 +136,9 @@
                 }
                 else
                 {
-                    <p>Muchas gracias por haber estado con nosotros durante este día, les agradecemo mucho su presencia.</p>
+                    <p>Muchas gracias por haber estado con nosotros durante este día, les agradecemos mucho su presencia.</p>
+                    <p>LLevamos casados <span id="countdown"></span>.</p>
                 }
-                <p>Aparta la fecha en tu calendario, sería un gran honor que nos acompañes.</p>
-                <p>Iremos actualizando la página conforme se acerca la fecha.</p>
             </div>
         </div>
     </div> <!--.story-->
